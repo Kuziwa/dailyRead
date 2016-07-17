@@ -1,0 +1,14 @@
+<div class="list" >
+    <div class="item card"  ng-repeat="reading in readings |  limitTo:31 " item="reading" >
+         <div class="row ">
+            <div class="col day">{{ reading.day }} </div></div>
+            <div class="row ">
+            <div class="col ot" >{{ reading.ot }} </div>
+            <div class="col nt">{{ reading.nt }}  </div>
+        </div><div class="row ">
+            <div class="col cy">{{ reading.ps}} </div>
+            <div class="col cy">{{ reading.pr }}</div>
+
+         </div>
+    </div>
+</div>

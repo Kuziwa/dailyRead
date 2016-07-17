@@ -1,0 +1,25 @@
+
+<div class="list" >
+
+<div class="card" ng-repeat="reading in readings |  limitTo:10 " item="reading">
+  <div class="item item-divider day bar-positive">
+    {{ reading.newDate | date:'dd MM' }}
+  </div>
+  <div class="item item-text-wrap">
+    <div class="row ">
+    <div class="col ot" >{{ reading.ot }} </div>
+    <div class="col nt">{{ reading.nt }}  </div>
+    </div><div class="row ">
+    <div class="col cy">{{ reading.ps}} </div>
+    <div class="col cy">{{ reading.pr }}</div>
+
+    </div>
+  </div>
+  <div class="item item-divider">
+    <div class="col"  >
+        <img src="pray.png" width="20px" height="20px">
+        {{ reading.prayer }}
+  </div>
+  </div>
+</div>
+</div>
